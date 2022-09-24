@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="postjob.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+  
+    
+  <span class="your">
+   
+ </span> 
+ 
+  
+  <div class="sign">
+    <form>
+       
+      <div class="txt">
+        <label >Job Title</label>
+        
+          <input type="text" placeholder="Title">
+        </div>
+        
+       <div class="txt">
+         <label >Company Name</label> 
+         <input type="text" placeholder="Enter the company name">
+        </div>
+        <div class="txt">
+        <label >Skills </label> 
+  <input type="text" >
+  </div>
+  <div class="txt">
+    <label >Job Type </label> 
+    <select  id="jobtype">
+      <option value="selectjobtype">Select
+      </option>
+      <option value="fulltime">Full Time
+      </option>
+      <option value="parttime">Part Time
+      </option>
+      <option value="workfromhome">Work From Home</option>
+    </select>
+</div>
+
+<div class="txt">
+  <label >Duration </label> 
+  <select  id="duration">
+    <option value="selectduration">Select
+    </option>
+    <option value="flexible">Flexible</option>
+    <option value="1month">1 Month
+    </option>
+    <option value="2month">2 Months
+    </option>
+    
+    <option value="6month">6 Months</option>
+    <option value="12month">12 Months</option>
+  </select>
+</div>
+<div class="txt">
+  <label >Salary </label> 
+<input type="text" >
+</div>
+<div class="txt">
+  <label >Last date to apply </label> 
+  <br>
+<input type="date" >
+</div>
+<div class="txt">
+  <label >Maximum number of applicants</label> 
+<input type="text" >
+</div>
+<div class="txt">
+  <label >Job Description </label> 
+<input type="text" >
+</div>
+ </form>
+  
+    <div class="terms">
+      <p>
+      By clicking on sign-up, you agree to Spotify's
+      <span class="link">Terms and Conditions of Use.</span> </p>
+     <p> To learn more about how Spotify collects, uses, shares and protects your personal data, please see <span class="link">
+      Privacy Policy.</span>  </p>
+    </div>
+    <div class="container">
+      <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button>
+      <div class="popup" id="popup">
+        <img src="images/tick.JPG" >
+        <h2>Thank You!</h2>
+        <p>Your response has been submitted.</p>
+        <button type="button" onclick="closePopup()"> <a href="jobpage.html">OK</a></button>
+      </div>
+    </div>
+    <script>
+      let popup= document.getElementById("popup");
+      function openPopup(){
+    popup.classList.add("open-popup");
+  }
+      function closePopup(){
+        popup.classList.add("close-popup");
+      }
+    </script>
+ 
+ 
+ 
+ </main>
+ 
+</body>
+</html>

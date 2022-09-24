@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Job Window</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+      <section id="header">
+        <a href="#"><img src="logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="home.html">HOME</a></li>
+                <li><a href="course.html">COURSES</a>
+                
+                </li>
+                <li><a class="active" href="job.html">JOB</a>
+                   
+                      
+                  </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+            </ul>
+        </div>
+    </section>
+        <div class="mainbox1">
+            <img src="f1.jpg" height="100%" width="100%">
+        </div>
+        <div class="mainbox2">
+            <div class="flex2">
+                <p class="p1"><b>Graphic Designer</b></p><br>
+                <p class="p2">Osscorp International Pvt Ltd - Mumbai, Maharashtra</p><br>
+                <div class="hl"></div>
+                <p>Salary : 15K - 22k / month</p><br>
+                <p>Job Type : Full Time (remote)</p><br>
+                <div class="hl"></div>
+                <p class="p2"><b>Full Job Description</b><br></p><br>
+                   <ul>
+                    <li>Basic Typing speed</li><br>
+                        <li>Bachelors degree in graphic design, art, or similar discipline</li><br>
+                        <li> Exceptional creativity and innovative design skills</li> <br>
+                        <li>Experience in Illustrator, InDesign, Photoshop, Dreamweaver, etc.</li><br>
+                        <li> Proven experience with graphic design, with a strong portfolio of work</li><br>
+                        <li> Excellent communication and presentation skills</li><br>
+                        <li> Organizational and time-management skills for meeting deadlines in a fast-paced environment</li>
+                    </ul></p>
+            </div>
+            <section id="hi">
+                    <div class="container">
+                        <button class="normal" type="submit" onclick="openPopup()">Apply</button>
+                    </section>
+                        <div class="popup" id="popup">
+                          <img src="apply.JPG" >
+                          <form>
+                           
+                            <div class="txt">
+                              <label >Email ID</label>
+                              
+                                <input type="text" placeholder="Enter your email ID">
+                              </div>
+                              
+                             <div class="txt">
+                               <label >Name</label> 
+                               <input type="text" placeholder="Your Full name">
+                              </div>
+                              <div class="txt">
+                              <label >Contact No. </label> 
+                        <input type="text" >
+                        </div>
+                        <div class="txt">
+                          <label >Resume </label> 
+                          <input type="text" placeholder="Upload your resume">
+                      </div>
+                      
+                      
+                      
+                       </form>
+                          <button type="button" onclick="closePopup()"> <a href="thank.html">SUBMIT</a> </button>
+                        </div>
+                      </div>
+                      <script>
+                        let popup= document.getElementById("popup");
+                        function openPopup(){
+                      popup.classList.add("open-popup");
+                    }
+                        function closePopup(){
+                          popup.classList.add("close-popup");
+                        }
+                      </script>
+            </div>
+        </div>
+    </body>
+    
+    </html>
